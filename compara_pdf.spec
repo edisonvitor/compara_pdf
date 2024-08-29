@@ -1,12 +1,11 @@
-# -*- mode: python ; coding: utf-8 -*-
-
+# spec file for PyInstaller
 
 a = Analysis(
     ['compara_pdf.py'],
-    pathex=[],
+    pathex=['J:\\projetos\\scripts\\new-venv\\Lib\\site-packages'],  # Adicione o path das bibliotecas
     binaries=[],
     datas=[],
-    hiddenimports=['PyMuPDF', 'PyMuPDFb'],
+    hiddenimports=['PyMuPDF', 'PyMuPDFb'],  # Inclua as dependências necessárias
     hookspath=[],
     hooksconfig={},
     runtime_hooks=[],
@@ -14,6 +13,7 @@ a = Analysis(
     noarchive=False,
     optimize=0,
 )
+
 pyz = PYZ(a.pure)
 
 exe = EXE(

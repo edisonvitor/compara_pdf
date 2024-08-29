@@ -118,3 +118,6 @@ output_file = 'resultados_comparacao_docentes.xlsx'
 save_results_to_excel(results, output_file)
 
 print(f'\nResultados salvos em {output_file}')
+input("Pressione Enter para encerrar ")
+exit()
+
