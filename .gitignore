@@ -1,3 +1,6 @@
 banca/
 candidatos/
 resultados_comparacao_docentes.xlsx
+dist/
+build/
+new-venv/
